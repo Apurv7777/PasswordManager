@@ -48,10 +48,10 @@ if(data==null || JSON.parse(data).length == 0){
     for(let i=0;i<arr.length;i++){
         const ele = arr[i];
         str += `<tr>
-            <td>${ele.website} <img onClick="copyText('${ele.website}')" src="copy.svg" alt="Copy Button" width="100" height="40" /></td>
-            <td>${ele.username} <img onClick="copyText('${ele.username}')" src="copy.svg" alt="Copy Button" width="100" height="40" /></td>
+            <td>${ele.website} <img onClick="copyText('${ele.website}')" src="./copy.svg" alt="Copy Button" width="100" height="40" /></td>
+            <td>${ele.username} <img onClick="copyText('${ele.username}')" src="./copy.svg" alt="Copy Button" width="100" height="40" /></td>
             <td id="pw">${maskPassword(ele.pwd)} <img onClick="copyText('${ele.pwd}')" src="copy.svg" alt="Copy Button" width="100" height="40" /></td>
-            <td><div onClick=deletePasswords('${ele.website}')><img src="delete.svg" alt="Delete Button" width="100" height="40"></div></td>
+            <td><div onClick=deletePasswords('${ele.website}')><img src="./delete.svg" alt="Delete Button" width="100" height="40"></div></td>
             </tr>`
         }
         tb.innerHTML += str
